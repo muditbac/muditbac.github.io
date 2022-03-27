@@ -1,6 +1,13 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163805465-1"></script>
 <script>
+  var url = (window.location != window.parent.location)
+            ? document.referrer
+            : document.location.href;
+  console.log(url);
+  
+  
+  
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
